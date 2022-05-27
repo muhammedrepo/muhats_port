@@ -72,5 +72,25 @@ const menu = [
     img: `${images.p4}`,
     desc: `Restaurant website template `,
   },
+  {
+    id: 8,
+    title: "Dice Game",
+    category: "javascript",
+    url: "https://roll-a-dice.muhats.com/",
+    source: "https://github.com/muhammedtijani/piggame",
+    tags: ["HTML5", "CSS", "JavaScript"],
+    img: `${images.p10}`,
+    desc: `Exciting Roll Dice Game `,
+  },
+  {
+    id: 9,
+    title: "Personal Portfolio",
+    category: "react",
+    url: "https://portfolio.muhats.com/",
+    source: "https://github.com/coolzyte/portfolio_v3",
+    tags: ["React", "Typescript", "Styled-Components"],
+    img: `${images.p11}`,
+    desc: `Portfolio Template `,
+  },
 ];
 export default menu;
