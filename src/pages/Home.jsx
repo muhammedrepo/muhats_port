@@ -5,7 +5,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 
 const Home = () => {
-  const [expanded, setExpanded] = useState(false);
+  const [expanded] = useState(false);
   const dataForDisplay = expanded ? items : items.slice(0, 3);
 
   return (
