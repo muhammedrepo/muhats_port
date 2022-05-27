@@ -1,13 +1,284 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .blue-background {
+    @apply bg-opacity-100 bg-[rgba(74,108,247,var(--tw-bg-opacity))];
+  }
+  .white-text {
+    @apply text-opacity-100
+    text-[rgba(255,255,255,var(--tw-text-opacity))];
+  }
+  .blue-text {
+    @apply text-opacity-100 text-[rgba(74,108,247,var(--tw-text-opacity))];
+  }
+  .sub-heading {
+    @apply font-bold text-opacity-100 text-[rgba(9,14,52,var(--tw-text-opacity))] text-3xl
+    sm:text-4xl
+    md:text-[45px]
+    mb-5;
+  }
+  .paragraph {
+    @apply font-medium text-base text-opacity-100 text-[rgba(149,156,177,var(--tw-text-opacity))] mb-10;
+  }
+  .icon {
+    @apply w-[70px]
+    h-[70px]
+    flex
+    items-center
+    justify-center
+    rounded-md
+    opacity-100  
+    text-[rgba(74,108,247,.1)]
+    mb-10;
+  }
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@layer components {
+  /* Header Styles */
+  .header-sticky {
+    @apply fixed top-0 w-full flex items-center bg-opacity-80 bg-[rgba(255,255,255,var(--tw-bg-opacity))]  backdrop-blur-sm backdrop-filter shadow-md z-50 transition-all duration-300;
+  }
+  .header-transparent {
+    @apply fixed bg-transparent top-0 left-0 z-50 w-full flex items-center;
+  }
+
+  .nav-link {
+    @apply text-lg font-semibold text-opacity-100 text-[rgb(99,115,129,var(--tw-text-opacity))]
+    hover:opacity-70
+    py-4
+    lg:py-5 lg:inline-flex lg:px-0
+    flex mx-8
+    lg:mr-0 lg:ml-8
+    xl:ml-12;
+  }
+
+  .mobile-menu-bar {
+    @apply relative
+    w-[30px]
+    h-0.5
+    my-1.5
+    block
+    bg-opacity-100
+bg-[rgba(0,0,0,var(--tw-bg-opacity))];
+  }
+
+  .navbarToggler {
+    @apply block absolute right-4 top-1/2 -translate-y-1/2
+    lg:hidden px-3 py-1.5 rounded-lg;
+  }
+
+  .navbarTogglerActive > span:nth-child(1) {
+    @apply top-[7px] rotate-45 transform;
+  }
+  .navbarTogglerActive > span:nth-child(2) {
+    @apply opacity-0;
+  }
+  .navbarTogglerActive > span:nth-child(3) {
+    @apply -top-[8px] rotate-[135deg] transform;
+  }
+
+  .navbarCollapse {
+    @apply absolute py-5
+    lg:py-0 lg:px-4
+    xl:px-6
+   bg-opacity-100
+bg-[rgba(29,33,68,var(--tw-bg-opacity))]
+    lg:bg-transparent
+     rounded-lg max-w-[250px] w-full
+    lg:max-w-full lg:w-full
+    right-4 top-full hidden
+    lg:block lg:static;
+  }
+  .navbarCollapseActive {
+    @apply absolute py-5
+    lg:py-0 lg:px-4
+    xl:px-6
+   bg-opacity-100
+bg-[rgba(255,255,255,var(--tw-bg-opacity))]
+    lg:bg-transparent
+     rounded-lg max-w-[250px] w-full
+    lg:max-w-full lg:w-full
+    right-4 top-full block
+    lg:block lg:static;
+  }
+
+  /* -----------------------------------------
+  Project Section Styling
+------------------------------------------*/
+  .category-btn {
+    @apply py-[10px]
+    sm:py-3
+    px-[12px]
+    sm:px-6
+    inline-flex
+    items-center
+    justify-center
+    font-semibold
+    capitalize
+    border-y border-blue-100
+    text-center text-black text-sm
+    sm:text-base
+    transition-all
+    hover:bg-blue-500 hover:text-white hover:border-inherit;
+  }
+  .category-btn:first-child {
+    @apply py-[10px]
+    rounded-l-lg;
+  }
+  .category-btn:last-child {
+    @apply py-[10px]
+    
+    rounded-r-lg;
+  }
+  .project-url {
+    @apply text-3xl text-white p-3 rounded-[50%] block m-auto border-8 border-solid blue-background -translate-y-1/2;
+  }
+
+  /* -----------------------------------------
+Social Media Link Styling 
+------------------------------------------*/
+  .social-links {
+    @apply w-9
+    h-9
+    mr-3
+    rounded-full
+    flex
+    items-center
+    justify-center
+    border
+    border-opacity-100 border-[rgba(229,232,242,var(--tw-border-opacity))]
+    text-opacity-100 text-[rgba(149,156,177,var(--tw-text-opacity))]
+    hover:text-opacity-100 hover:text-[rgba(255,255,255,var(--tw-text-opacity))]
+    hover:border-opacity-100 hover:border-[rgba(74,108,247,var(--tw-border-opacity))]
+    hover:bg-opacity-100 hover:bg-[rgba(74,108,247,var(--tw-bg-opacity))];
+  }
+
+  /* -----------------------------------------
+  Button Styling
+------------------------------------------*/
+  .btn {
+    @apply text-base
+    font-bold
+    white-text
+    blue-background
+    rounded-full
+    cursor-pointer
+    py-3
+    px-8
+    md:px-9
+    lg:px-8
+    xl:px-9
+    hover:shadow-md hover:bg-opacity-90
+    transition-all duration-300;
+  }
+
+  .resource-btn {
+    @apply text-white blue-background hover:bg-opacity-90 focus:ring-2 focus:outline-none focus:ring-opacity-80 font-medium text-sm px-5 py-2.5 text-center inline-flex items-center mr-2 mb-2 uppercase cursor-pointer gap-4;
+  }
+
+  .resource-btn:first-child {
+    @apply rounded-l-full;
+  }
+  .resource-btn:last-child {
+    @apply rounded-r-full;
+  }
+
+  /* -----------------------------------------
+  Services Styling
+------------------------------------------*/
+
+  .title {
+    @apply font-bold text-opacity-100 text-[rgba(29,33,68,var(--tw-text-opacity))] text-lg
+  sm:text-xl
+  hover:text-opacity-100 hover:text-[rgba(74,108,247,var(--tw-text-opacity))]
+  block mb-4;
+  }
+  .services-paragraph {
+    @apply text-base
+    text-opacity-100 text-[rgba(149,156,177,var(--tw-text-opacity))]
+    pb-7 mb-6 border-b border-opacity-100 border-[rgba(243,243,243,var(--tw-border-opacity))];
+  }
+  .view-detail-btn {
+    @apply font-medium text-opacity-100 text-[rgba(149,156,177,var(--tw-text-opacity))]
+    hover:text-opacity-100 hover:text-[rgba(74,108,247,var(--tw-text-opacity))]
+    text-base inline-flex items-center;
+  }
+
+  .card {
+    @apply mb-10 rounded-lg border-b-4 border-transparent bg-opacity-100 bg-[rgba(245,248,255,var(--tw-bg-opacity))] text-center transition-all duration-300 hover:border-[rgb(62,125,255)];
+  }
+
+  /* -----------------------------------------
+  RESOURCES Styling
+------------------------------------------*/
+
+  .resources-card {
+    @apply w-full md:w-[50%] lg:w-[33.333333%] px-4;
+  }
+  /* -----------------------------------------
+  FOOTER STYLING
+------------------------------------------*/
+  .footer-box {
+    @apply w-full
+  sm:w-1/2
+  md:w-1/2
+  lg:w-1/6
+  xl:w-1/6
+  px-4;
+  }
+  .footer-title {
+    @apply font-bold 
+  text-opacity-100
+  text-[rgba(9,14,52,var(--tw-text-opacity))]
+  text-xl mb-10;
+  }
+  .footer-list {
+    @apply text-base
+    font-medium
+    inline-block
+    text-opacity-100
+text-[rgba(149,156,177,var(--tw-text-opacity))]
+    mb-4
+    hover:text-opacity-100
+hover:text-[#4a6cf7];
+  }
+}
+
+/* -----------------------------------------
+                Custom CSS 
+------------------------------------------*/
+.active {
+  color: #4a6cf7;
+}
+.projects-bg-image {
+  background-image: linear-gradient(
+    180deg,
+    #3e7dff 0%,
+    rgba(62, 125, 255, 0) 100%
+  );
+}
+
+.input-field {
+  width: 100%;
+  border-radius: 0.125rem;
+  border-bottom-width: 2px;
+  border-color: transparent;
+  --tw-bg-opacity: 1;
+  background-color: rgba(248, 248, 249, var(--tw-bg-opacity));
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 500;
+  --tw-text-opacity: 1;
+  color: rgba(149, 156, 177, var(--tw-text-opacity));
+}
+
+.card:hover {
+  box-shadow: 0 5px 15px rgb(0 0 0 / 30%);
+  transform: scale(1.02);
 }
