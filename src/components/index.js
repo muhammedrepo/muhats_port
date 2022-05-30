@@ -6,6 +6,7 @@ import Contact from "./Contact";
 import SocialMedia from "./SocialMedia";
 import Logo from "./Logo";
 import Project from "./Project";
+import Work from "./Work";
 import ScrollToTop from "./ScrollToTop";
 
 export {
@@ -18,4 +19,5 @@ export {
   Logo,
   ScrollToTop,
   Project,
+  Work,
 };

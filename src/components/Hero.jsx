@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link } from "react-scroll";
 import heroShape from "../assets/images/hero-shape-1.svg";
 import heroShape2 from "../assets/images/hero-shape-2.svg";
 
@@ -31,7 +31,16 @@ const Hero = () => {
               </p>
               <ul className="flex justify-center items-center">
                 <li className="btn">
-                  <Link to="/projects" className="hero-btn mx-2 py-4">
+                  <Link
+                    activeClass="#fff"
+                    className="hero-btn mx-2 py-4"
+                    to="work"
+                    spy={true}
+                    smooth={true}
+                    duration={1000}
+                    exact="true"
+                    offset={-80}
+                  >
                     Projects
                   </Link>
                 </li>
