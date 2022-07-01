@@ -15,10 +15,10 @@ const menu = [
   {
     id: 2,
     title: "Realtor",
-    category: "react",
+    category: "Next",
     url: "https://realtor-muhammedtijani.vercel.app/",
     source: "https://github.com/muhammedtijani/realtor",
-    tags: ["React/Next", "ChakraUI"],
+    tags: ["NextJS", "ChakraUI"],
     img: `${images.p2}`,
     desc: `Real estate app`,
   },
@@ -56,7 +56,7 @@ const menu = [
     id: 6,
     title: "Search App",
     category: "react",
-    url: "https://goggle.muhats.com/search",
+    url: "https://goggle.muhats.com",
     source: "",
     tags: ["React", "Tailwind"],
     img: `${images.p8}`,
@@ -91,6 +91,16 @@ const menu = [
     tags: ["React", "Typescript", "Styled-Components"],
     img: `${images.p11}`,
     desc: `Portfolio Template `,
+  },
+  {
+    id: 10,
+    title: "Travel Advisor",
+    category: "react",
+    url: "https://hotelapp.muhats.com/",
+    source: "https://github.com/coolzyte/travel_advisor",
+    tags: ["React", "RapidApi", "MaterialUI"],
+    img: `${images.p12}`,
+    desc: `Browse Hotels Around the world `,
   },
 ];
 export default menu;
