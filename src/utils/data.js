@@ -102,5 +102,15 @@ const menu = [
     img: `${images.p12}`,
     desc: `Browse Hotels Around the world `,
   },
+  {
+    id: 11,
+    title: "Dev Portfolio",
+    category: "react",
+    url: "https://smato-clone.muhats.com/",
+    source: "https://github.com/coolzyte/smato-clone-react",
+    tags: ["React", "Styled-component", "TailwindCSS"],
+    img: `${images.p13}`,
+    desc: `Browse Hotels Around the world `,
+  },
 ];
 export default menu;
