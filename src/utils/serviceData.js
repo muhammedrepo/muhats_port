@@ -14,6 +14,6 @@ export const serviceData = [
   {
     image: `${images.s3}`,
     name: "Mobile App Development",
-    desc: "User-pleasing mobile apps are what I specialize in creating for my clients. Create a long-lasting app masterpiece by taking advantage of AI, IoT, and other cutting-edge technology.",
+    desc: "I create user-friendly mobile applications. Using AI, Ml, IoT, and other cutting-edge technologies to create app masterpieces that last.",
   },
 ];
