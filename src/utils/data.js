@@ -23,7 +23,7 @@ const menu = [
     desc: `Real estate app`,
   },
   {
-    id: 3,
+    id: 11,
     title: "Startup",
     category: "react",
     url: "https://startup.muhats.com/",
@@ -36,8 +36,8 @@ const menu = [
     id: 4,
     title: "Crypto News",
     category: "mern",
-    url: "https://cryptoverse.muhats.com/",
-    source: "https://github.com/muhammedtijani/cryptonews",
+    url: "https://crypto-news.muhats.com/",
+    source: "https://github.com/coolzyte/cryptonews",
     tags: ["React", "Tailwind"],
     img: `${images.p1}`,
     desc: "Crypto News App",
@@ -103,7 +103,7 @@ const menu = [
     desc: `Browse Hotels Around the world `,
   },
   {
-    id: 11,
+    id: 3,
     title: "Dev Portfolio",
     category: "react",
     url: "https://smato-clone.muhats.com/",
