@@ -23,15 +23,16 @@ const menu = [
     desc: `Real estate app`,
   },
   {
-    id: 11,
-    title: "Startup",
+    id: 3,
+    title: "Dev Portfolio",
     category: "react",
-    url: "https://startup.muhats.com/",
-    source: "https://github.com/coolzyte/startup",
-    tags: ["React", "Tailwind"],
-    img: `${images.p3}`,
-    desc: `Startup focus template`,
+    url: "https://smato-clone.muhats.com/",
+    source: "https://github.com/coolzyte/smato-clone-react",
+    tags: ["React", "Styled-component", "TailwindCSS"],
+    img: `${images.p13}`,
+    desc: `Browse Hotels Around the world `,
   },
+
   {
     id: 4,
     title: "Crypto News",
@@ -102,15 +103,16 @@ const menu = [
     img: `${images.p12}`,
     desc: `Browse Hotels Around the world `,
   },
+
   {
-    id: 3,
-    title: "Dev Portfolio",
+    id: 11,
+    title: "Startup",
     category: "react",
-    url: "https://smato-clone.muhats.com/",
-    source: "https://github.com/coolzyte/smato-clone-react",
-    tags: ["React", "Styled-component", "TailwindCSS"],
-    img: `${images.p13}`,
-    desc: `Browse Hotels Around the world `,
+    url: "https://startup.muhats.com/",
+    source: "https://github.com/coolzyte/startup",
+    tags: ["React", "Tailwind"],
+    img: `${images.p3}`,
+    desc: `Startup focus template`,
   },
 ];
 export default menu;
