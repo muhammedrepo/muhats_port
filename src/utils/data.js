@@ -114,5 +114,15 @@ const menu = [
     img: `${images.p3}`,
     desc: `Startup focus template`,
   },
+  {
+    id: 12,
+    title: "Manage Landing Page",
+    category: "react",
+    url: "https://manage-landing-page.muhats.com/",
+    source: "https://github.com/coolzyte/manage-landing-page",
+    tags: ["React", "Tailwind"],
+    img: `${images.p14}`,
+    desc: `Manage landing page`,
+  },
 ];
 export default menu;
