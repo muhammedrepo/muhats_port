@@ -1,11 +1,11 @@
-import { Link } from "react-scroll";
+import { Link } from "react-router-dom";
 import logo from "../assets/images/logo.png";
 
 const Logo = ({ topBarScroll }) => {
   return (
     <div className="w-60 max-w-full px-4 cursor-pointer">
       <Link
-        to="home"
+        to="/"
         spy={true}
         smooth={true}
         duration={1000}

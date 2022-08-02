@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import { Link } from "react-scroll";
 import heroShape from "../assets/images/hero-shape-1.svg";
 import heroShape2 from "../assets/images/hero-shape-2.svg";
@@ -23,7 +24,7 @@ const Hero = () => {
                 HI, my name is
               </span>
               <h1 className="mb-5 text-3xl sm:text-4xl md:text-5xl lg:text-[40px] xl:text-5xl font-bold text-center">
-                Muhammed
+                Muhammed T.
               </h1>
               <p className="max-w-[540px] text-xl md:text-xl paragraph text-center">
                 I am a software engineer who specializes in crafting amazing
@@ -45,7 +46,7 @@ const Hero = () => {
                   </Link>
                 </li>
                 <li className="btn bg-gray-700 ml-4">
-                  <Link to="/resources">Resources</Link>
+                  <NavLink to="/resources">Resources</NavLink>
                 </li>
               </ul>
             </div>
