@@ -21,6 +21,7 @@ import p11 from "../assets/images/projects/11.png";
 import p12 from "../assets/images/projects/12.png";
 import p13 from "../assets/images/projects/13.png";
 import p14 from "../assets/images/projects/14.png";
+import p15 from "../assets/images/projects/15.png";
 import vscode from "../assets/images/resources/vscode.png";
 import codepen from "../assets/images/resources/codepen.png";
 import emmet from "../assets/images/resources/emmet.png";
@@ -124,6 +125,7 @@ export default {
   p12,
   p13,
   p14,
+  p15,
   s1,
   s2,
   s3,

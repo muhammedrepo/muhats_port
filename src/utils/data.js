@@ -124,5 +124,15 @@ const menu = [
     img: `${images.p14}`,
     desc: `Manage landing page`,
   },
+  {
+    id: 13,
+    title: "User Accounts Activity",
+    category: "react",
+    url: "https://frontend-interview-test.netlify.app/",
+    source: "https://github.com/coolzyte/interview-test",
+    tags: ["React", "Tailwind", "API"],
+    img: `${images.p15}`,
+    desc: `User accounts analytics`,
+  },
 ];
 export default menu;
