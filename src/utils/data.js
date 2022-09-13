@@ -144,5 +144,15 @@ const menu = [
     img: `${images.p16}`,
     desc: `Hoobank react website`,
   },
+  {
+    id: 15,
+    title: "Pavo Website",
+    category: "react",
+    url: "https://pavo.muhats.com/",
+    source: "https://github.com/coolzyte/pavo",
+    tags: ["React", "Tailwind"],
+    img: `${images.p17}`,
+    desc: `Pavo react website`,
+  },
 ];
 export default menu;
