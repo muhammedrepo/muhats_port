@@ -5,7 +5,7 @@ const Services = () => {
   return (
     <section
       id="services"
-      className="bg-[rgba(74,108,247,var(--tw-bg-opacity))] bg-opacity-5 pt-20 lg:pt-[120px] pb-12 lg:pb-[90px]"
+      className="bg-blue-500 bg-opacity-5 pt-20 lg:pt-[120px] pb-12 lg:pb-[90px]"
     >
       <div className="container mx-auto px-4">
         <div
@@ -18,7 +18,7 @@ const Services = () => {
             <div className="max-w-[625px] mb-5">
               <span
                 className="
-                  font-semibold text-lg text-opacity-100 text-[rgba(74,108,247,var(--tw-text-opacity))] mb-2 block
+                  font-semibold text-lg text-blue-500/100 mb-2 block
                 "
               >
                 WHAT I DO
@@ -27,33 +27,19 @@ const Services = () => {
                 className="
                   font-bold text-3xl
                   sm:text-4xl
-                  md:text-[40px]
-                  text-opacity-100 text-[rgba(9,14,52,var(--tw-text-opacity))]
+                  md:text-[40px] text-gray-900/100
                 "
               >
                 I work with clients to create their dream projects.
               </h2>
             </div>
           </div>
-          {/* <div className="w-full lg:w-1/3 px-4">
-            <div className="flex lg:justify-end mb-5">
-              <a
-                href="#home"
-                className="
-                  text-lg font-medium text-opacity-100 text-[rgba(9,14,52,var(--tw-text-opacity))] underline
-                  hover:text-opacity-100 hover:text-[rgba(74,108,247,var(--tw-text-opacity))]
-                "
-              >
-                EXPLORE SERVICES
-              </a>
-            </div>
-          </div> */}
         </div>
 
         <div className="flex flex-wrap justify-center -mx-4" data-aos="fade-in">
           {serviceData.map((item, index) => (
             <div className="flex w-full md:w-1/2 lg:w-1/3 px-4" key={index}>
-              <div className="bg-opacity-100 bg-[rgba(255,255,255,var(--tw-bg-opacity))] mb-10">
+              <div className="bg-white/100 mb-10">
                 <a href="#home" className="block w-full">
                   <img src={item.image} alt="" className="w-full" />
                 </a>

@@ -31,10 +31,10 @@ const Hero = () => {
                 digital experiences.
               </p>
               <ul className="flex justify-center items-center">
-                <li className="btn">
+                <li>
                   <Link
                     activeClass="#fff"
-                    className="hero-btn mx-2 py-4"
+                    className="btn mx-2"
                     to="work"
                     spy={true}
                     smooth={true}
@@ -45,8 +45,10 @@ const Hero = () => {
                     Projects
                   </Link>
                 </li>
-                <li className="btn bg-gray-700 ml-4">
-                  <NavLink to="/resources">Resources</NavLink>
+                <li>
+                  <NavLink to="/resources" className="btn bg-gray-700 ml-4">
+                    Resources
+                  </NavLink>
                 </li>
               </ul>
             </div>

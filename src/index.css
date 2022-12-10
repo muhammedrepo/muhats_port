@@ -4,23 +4,22 @@
 
 @layer base {
   .blue-background {
-    @apply bg-opacity-100 bg-[rgba(74,108,247,var(--tw-bg-opacity))];
+    @apply bg-blue-500/100;
   }
   .white-text {
-    @apply text-opacity-100
-    text-[rgba(255,255,255,var(--tw-text-opacity))];
+    @apply text-white/100;
   }
   .blue-text {
-    @apply text-opacity-100 text-[rgba(74,108,247,var(--tw-text-opacity))];
+    @apply text-blue-500/100;
   }
   .sub-heading {
-    @apply font-bold text-opacity-100 text-[rgba(9,14,52,var(--tw-text-opacity))] text-3xl
+    @apply font-bold text-gray-900/100 text-3xl
     sm:text-4xl
     md:text-[45px]
     mb-5;
   }
   .paragraph {
-    @apply font-medium text-base text-opacity-100 text-[rgba(149,156,177,var(--tw-text-opacity))] mb-10;
+    @apply font-medium text-base text-gray-400/100 mb-10;
   }
   .icon {
     @apply w-[70px]
@@ -38,14 +37,14 @@
 @layer components {
   /* Header Styles */
   .header-sticky {
-    @apply fixed top-0 w-full flex items-center bg-opacity-80 bg-[rgba(255,255,255,var(--tw-bg-opacity))]  backdrop-blur-sm backdrop-filter shadow-md z-50 transition-all duration-300;
+    @apply fixed top-0 w-full flex items-center bg-white/80  backdrop-blur-sm backdrop-filter shadow-md z-50 transition-all duration-300;
   }
   .header-transparent {
     @apply fixed bg-transparent top-0 left-0 z-50 w-full flex items-center;
   }
 
   .nav-link {
-    @apply text-lg font-semibold text-opacity-100 text-[rgb(99,115,129,var(--tw-text-opacity))]
+    @apply text-lg font-semibold text-gray-500/100
     hover:opacity-70
     py-4
     lg:py-5 lg:inline-flex lg:px-0
@@ -96,7 +95,7 @@ bg-[rgba(29,33,68,var(--tw-bg-opacity))]
     lg:py-0 lg:px-4
     xl:px-6
    bg-opacity-100
-bg-[rgba(255,255,255,var(--tw-bg-opacity))]
+bg-white
     lg:bg-transparent
      rounded-lg max-w-[250px] w-full
     lg:max-w-full lg:w-full
@@ -137,25 +136,6 @@ bg-[rgba(255,255,255,var(--tw-bg-opacity))]
   }
 
   /* -----------------------------------------
-Social Media Link Styling 
-------------------------------------------*/
-  .social-links {
-    @apply w-9
-    h-9
-    mr-3
-    rounded-full
-    flex
-    items-center
-    justify-center
-    border
-    border-opacity-100 border-[rgba(229,232,242,var(--tw-border-opacity))]
-    text-opacity-100 text-[rgba(149,156,177,var(--tw-text-opacity))]
-    hover:text-opacity-100 hover:text-[rgba(255,255,255,var(--tw-text-opacity))]
-    hover:border-opacity-100 hover:border-[rgba(74,108,247,var(--tw-border-opacity))]
-    hover:bg-opacity-100 hover:bg-[rgba(74,108,247,var(--tw-bg-opacity))];
-  }
-
-  /* -----------------------------------------
   Button Styling
 ------------------------------------------*/
   .btn {
@@ -192,7 +172,7 @@ Social Media Link Styling
   .title {
     @apply font-bold text-opacity-100 text-[rgba(29,33,68,var(--tw-text-opacity))] text-lg
   sm:text-xl
-  hover:text-opacity-100 hover:text-[rgba(74,108,247,var(--tw-text-opacity))]
+  hover:text-opacity-100 hover:text-blue-500/100
   block mb-4;
   }
   .services-paragraph {
@@ -202,7 +182,7 @@ Social Media Link Styling
   }
   .view-detail-btn {
     @apply font-medium text-opacity-100 text-[rgba(149,156,177,var(--tw-text-opacity))]
-    hover:text-opacity-100 hover:text-[rgba(74,108,247,var(--tw-text-opacity))]
+    hover:text-opacity-100 hover:text-blue-500/100
     text-base inline-flex items-center;
   }
 
