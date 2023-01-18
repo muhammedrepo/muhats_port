@@ -8,7 +8,8 @@ import Logo from "./Logo";
 import Project from "./Project";
 import Work from "./Work";
 import ScrollToTop from "./ScrollToTop";
-
+import Button from "./Button";
+import ResourcePanel from "./ResourcePanel";
 export {
   Hero,
   Services,
@@ -20,4 +21,6 @@ export {
   ScrollToTop,
   Project,
   Work,
+  Button,
+  ResourcePanel,
 };

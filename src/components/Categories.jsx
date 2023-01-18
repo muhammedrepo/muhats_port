@@ -1,16 +1,19 @@
+import Button from "./Button";
+
 const Categories = ({ categories, filterItems }) => {
   return (
-    <div className="flex justify-center mx-auto mb-20 ">
+    <div className="flex justify-center mx-auto mb-20">
       {categories.map((category, index) => {
         return (
-          <button
-            type="button"
+          <Button
+            primary
+            roundedCorner
             key={index}
             onClick={() => filterItems(category)}
-            className="resource-btn"
+            className="capitalize"
           >
             {category}
-          </button>
+          </Button>
         );
       })}
     </div>

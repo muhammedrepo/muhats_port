@@ -39,7 +39,7 @@ const menu = [
     category: "mern",
     url: "https://crypto-news.muhats.com/",
     source: "https://github.com/coolzyte/cryptonews",
-    tags: ["React", "Tailwind"],
+    tags: ["React", "MaterialUI"],
     img: `${images.p1}`,
     desc: "Crypto News App",
   },

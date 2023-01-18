@@ -1,5 +1,5 @@
 import { Link } from "react-scroll";
-import { Contact, ScrollToTop } from "../components";
+import { Button, Contact, ResourcePanel, ScrollToTop } from "../components";
 import heroShape from "../assets/images/hero-shape-1.svg";
 import heroShape2 from "../assets/images/hero-shape-2.svg";
 import {
@@ -33,15 +33,11 @@ const Resources = () => {
                   Resources for hand-crafting Beautiful and Performant Websites.
                 </p>
               </div>
-              <div className="flex flex-wrap items-center justify-center">
+              <div className="flex items-center justify-center">
                 {btnData.map((item, index) => (
-                  <div
-                    className="resource-btn rounded-full lg:rounded-none px-4 lg:px-5"
-                    key={index}
-                    type="button"
-                  >
+                  <Button primary roundedCorner key={index}>
                     <Link
-                      className="inline-flex items-center gap-2"
+                      className="inline-flex items-center gap-1 md:gap-2"
                       to={item.url}
                       spy={true}
                       smooth={true}
@@ -49,269 +45,53 @@ const Resources = () => {
                       exact="true"
                       offset={-80}
                     >
-                      {item.icon}
+                      <span className="hidden md:block">{item.icon}</span>
                       {item.title}
                     </Link>
-                  </div>
+                  </Button>
                 ))}
               </div>
-
-              <section id="devtools" className="flex-wrap pt-[120px] pb-[50px]">
-                <h2 className="sub-heading mb-20 text-center">
-                  Development Tools
-                </h2>
-                <div className="flex flex-wrap -mx-4">
-                  {tools.map((tool, index) => (
-                    <div className="resources-card" key={index}>
-                      <div className="mb-[70px]">
-                        <div className="icon">
-                          <img
-                            src={tool.icon}
-                            alt={tool.icon}
-                            className="fill-current"
-                          />
-                        </div>
-                        <h3 className="title">
-                          <a
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            href={tool.url}
-                          >
-                            {tool.title}
-                          </a>
-                        </h3>
-                        <p className="paragraph">{tool.desc}</p>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </section>
-
-              {/* HTML RESOURCES */}
-
-              <section id="html" className="flex-wrap pt-[80px] pb-[50px]">
-                <h2 className="sub-heading mb-20 text-center">
-                  HTML5 RESOURCES
-                </h2>
-                <div className="flex flex-wrap -mx-4">
-                  {htmldata.map((item, index) => (
-                    <div className="resources-card" key={index}>
-                      <div className="mb-[70px]">
-                        <div className="icon">
-                          <img
-                            src={item.icon}
-                            alt={item.icon}
-                            className="fill-current"
-                          />
-                        </div>
-                        <h3 className="title">
-                          <a
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            href={item.url}
-                          >
-                            {item.title}
-                          </a>
-                        </h3>
-                        <p className="paragraph">{item.desc}</p>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </section>
-
-              {/* CSS RESOURCES */}
-              <section id="css" className="flex-wrap pt-[80px] pb-[50px]">
-                <h2 className="sub-heading mb-20 text-center">CSS RESOURCES</h2>
-                <div className="flex flex-wrap -mx-4">
-                  {cssresource.map((item, index) => (
-                    <div className="resources-card" key={index}>
-                      <div className="mb-[70px]">
-                        <div className="icon">
-                          <img
-                            src={item.icon}
-                            alt={item.icon}
-                            className="fill-current"
-                          />
-                        </div>
-                        <h3 className="title">
-                          <a
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            href={item.url}
-                          >
-                            {item.title}
-                          </a>
-                        </h3>
-                        <p className="paragraph">{item.desc}</p>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </section>
-              {/* JAVASCRIPT RESOURCES */}
-              <section
+              <ResourcePanel
+                heading="Development Tools"
+                items={tools}
+                id="devtools"
+              />
+              <ResourcePanel
+                heading="HTML5 RESOURCES"
+                items={htmldata}
+                id="html"
+              />
+              <ResourcePanel
+                heading="CSS RESOURCES"
+                items={cssresource}
+                id="css"
+              />
+              <ResourcePanel
+                heading="JAVASCRIPT RESOURCES"
+                items={jscriptData}
                 id="javascript"
-                className="flex-wrap pt-[80px] pb-[50px]"
-              >
-                <h2 className="sub-heading mb-20 text-center">
-                  JAVASCRIPT RESOURCES
-                </h2>
-                <div className="flex flex-wrap -mx-4">
-                  {jscriptData.map((item, index) => (
-                    <div className="resources-card" key={index}>
-                      <div className="mb-[70px]">
-                        <div className="icon">
-                          <img
-                            src={item.icon}
-                            alt={item.icon}
-                            className="fill-current"
-                          />
-                        </div>
-                        <h3 className="title">
-                          <a
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            href={item.url}
-                          >
-                            {item.title}
-                          </a>
-                        </h3>
-                        <p className="paragraph">{item.desc}</p>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </section>
-
-              {/* FONT RESOURCES */}
-              <section id="fonts" className="flex-wrap pt-[80px] pb-[50px]">
-                <h2 className="sub-heading mb-20 text-center">
-                  FONTS AND TYPOGRAPHY TOOLS
-                </h2>
-                <div className="flex flex-wrap -mx-4">
-                  {fontData.map((item, index) => (
-                    <div className="resources-card" key={index}>
-                      <div className="mb-[70px]">
-                        <div className="icon">
-                          <img
-                            src={item.icon}
-                            alt={item.icon}
-                            className="fill-current"
-                          />
-                        </div>
-                        <h3 className="title">
-                          <a
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            href={item.url}
-                          >
-                            {item.title}
-                          </a>
-                        </h3>
-                        <p className="paragraph">{item.desc}</p>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </section>
-
-              {/* COLORS RESOURCES */}
-              <section id="colors" className="flex-wrap pt-[80px] pb-[50px]">
-                <h2 className="sub-heading mb-20 text-center">
-                  GREAT COLORS AND TOOLS
-                </h2>
-                <div className="flex flex-wrap -mx-4">
-                  {colorData.map((item, index) => (
-                    <div className="resources-card" key={index}>
-                      <div className="mb-[70px]">
-                        <div className="icon">
-                          <img
-                            src={item.icon}
-                            alt={item.icon}
-                            className="fill-current"
-                          />
-                        </div>
-                        <h3 className="title">
-                          <a
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            href={item.url}
-                          >
-                            {item.title}
-                          </a>
-                        </h3>
-                        <p className="paragraph">{item.desc}</p>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </section>
-
-              {/* IMAGES AND VIDEOS RESOURCES */}
-              <section id="images" className="flex-wrap pt-[80px] pb-[50px]">
-                <h2 className="sub-heading mb-20 text-center">
-                  IMAGES AND VIDEOS
-                </h2>
-                <div className="flex flex-wrap -mx-4">
-                  {imgVidData.map((item, index) => (
-                    <div className="resources-card" key={index}>
-                      <div className="mb-[70px]">
-                        <div className="icon">
-                          <img
-                            src={item.icon}
-                            alt={item.icon}
-                            className="fill-current"
-                          />
-                        </div>
-                        <h3 className="title">
-                          <a
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            href={item.url}
-                          >
-                            {item.title}
-                          </a>
-                        </h3>
-                        <p className="paragraph">{item.desc}</p>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </section>
-
-              {/* ICONS RESOURCES */}
-              <section id="icons" className="flex-wrap pt-[80px] pb-[50px]">
-                <h2 className="sub-heading mb-20 text-center">
-                  BEST ICONS AND TOOLS
-                </h2>
-                <div className="flex flex-wrap -mx-4">
-                  {iconsData.map((item, index) => (
-                    <div className="resources-card" key={index}>
-                      <div className="mb-[70px]">
-                        <div className="icon">
-                          <img
-                            src={item.icon}
-                            alt={item.icon}
-                            className="fill-current"
-                          />
-                        </div>
-                        <h3 className="title">
-                          <a
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            href={item.url}
-                          >
-                            {item.title}
-                          </a>
-                        </h3>
-                        <p className="paragraph">{item.desc}</p>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-                <Contact />
-              </section>
+              />
+              <ResourcePanel
+                heading="FONTS AND TYPOGRAPHY TOOLS"
+                items={fontData}
+                id="fonts"
+              />
+              <ResourcePanel
+                heading="GREAT COLORS AND TOOLS"
+                items={colorData}
+                id="colors"
+              />
+              <ResourcePanel
+                heading="IMAGES AND VIDEOS"
+                items={imgVidData}
+                id="images"
+              />
+              <ResourcePanel
+                heading="BEST ICONS AND TOOLS"
+                items={iconsData}
+                id="icons"
+              />
+              <Contact />
             </div>
             <div className="hidden px-4 lg:block lg:w-1/12"></div>
           </div>

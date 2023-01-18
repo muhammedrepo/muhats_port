@@ -1,5 +1,6 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
+import Button from "./Button";
 
 const Result = () => {
   return (
@@ -111,7 +112,9 @@ const Contact = () => {
                 </div>
                 <div className="w-full px-4">
                   <div className="pt-4 text-center">
-                    <button className="btn">Send</button>
+                    <Button primary rounded>
+                      Send
+                    </Button>
                   </div>
                 </div>
               </div>

@@ -6,13 +6,7 @@ const About = () => {
       <div className="container mx-auto px-4">
         <div className="flex flex-wrap -mx-4">
           <div
-            className="
-                w-full
-                lg:w-1/2
-                xl:w-[58.333333%]
-                px-4 mb-8
-                lg:mb-0
-              "
+            className="w-full lg:w-1/2 xl:w-[58.333333%] px-4 mb-8 lg:mb-0"
             data-aos="fade-in"
           >
             <span

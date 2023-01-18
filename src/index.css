@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+/* html {
+  scroll-behavior: smooth;
+} */
+
 @layer base {
   .blue-background {
     @apply bg-blue-500/100;
@@ -36,36 +40,14 @@
 
 @layer components {
   /* Header Styles */
-  .header-sticky {
-    @apply fixed top-0 w-full flex items-center bg-white/80  backdrop-blur-sm backdrop-filter shadow-md z-50 transition-all duration-300;
-  }
-  .header-transparent {
-    @apply fixed bg-transparent top-0 left-0 z-50 w-full flex items-center;
-  }
-
-  .nav-link {
-    @apply text-lg font-semibold text-gray-500/100
-    hover:opacity-70
-    py-4
-    lg:py-5 lg:inline-flex lg:px-0
-    flex mx-8
-    lg:mr-0 lg:ml-8
-    xl:ml-12;
-  }
 
   .mobile-menu-bar {
     @apply relative
     w-[30px]
     h-0.5
     my-1.5
-    block
-    bg-opacity-100
-bg-[rgba(0,0,0,var(--tw-bg-opacity))];
-  }
-
-  .navbarToggler {
-    @apply block absolute right-4 top-1/2 -translate-y-1/2
-    lg:hidden px-3 py-1.5 rounded-lg;
+    block 
+bg-[rgba(0,0,0,1)];
   }
 
   .navbarTogglerActive > span:nth-child(1) {
@@ -76,31 +58,6 @@ bg-[rgba(0,0,0,var(--tw-bg-opacity))];
   }
   .navbarTogglerActive > span:nth-child(3) {
     @apply -top-[8px] rotate-[135deg] transform;
-  }
-
-  .navbarCollapse {
-    @apply absolute py-5
-    lg:py-0 lg:px-4
-    xl:px-6
-   bg-opacity-100
-bg-[rgba(29,33,68,var(--tw-bg-opacity))]
-    lg:bg-transparent
-     rounded-lg max-w-[250px] w-full
-    lg:max-w-full lg:w-full
-    right-4 top-full hidden
-    lg:block lg:static;
-  }
-  .navbarCollapseActive {
-    @apply absolute py-5
-    lg:py-0 lg:px-4
-    xl:px-6
-   bg-opacity-100
-bg-white
-    lg:bg-transparent
-     rounded-lg max-w-[250px] w-full
-    lg:max-w-full lg:w-full
-    right-4 top-full block
-    lg:block lg:static;
   }
 
   /* -----------------------------------------
@@ -133,36 +90,6 @@ bg-white
   }
   .project-url {
     @apply text-3xl text-white p-3 rounded-[50%] block m-auto border-8 border-solid blue-background -translate-y-1/2;
-  }
-
-  /* -----------------------------------------
-  Button Styling
-------------------------------------------*/
-  .btn {
-    @apply text-base
-    font-bold
-    white-text
-    blue-background
-    rounded-full
-    cursor-pointer
-    py-3
-    px-8
-    md:px-9
-    lg:px-8
-    xl:px-9
-    hover:shadow-md hover:bg-opacity-90
-    transition-all duration-300;
-  }
-
-  .resource-btn {
-    @apply text-white blue-background hover:bg-opacity-90 focus:ring-2 focus:outline-none focus:ring-opacity-80 font-medium text-xs lg:text-sm px-4 py-2 lg:px-5 lg:py-2.5  text-center inline-flex items-center mr-1 mb-2 uppercase cursor-pointer;
-  }
-
-  .resource-btn:first-child {
-    @apply rounded-l-full;
-  }
-  .resource-btn:last-child {
-    @apply rounded-r-full;
   }
 
   /* -----------------------------------------
