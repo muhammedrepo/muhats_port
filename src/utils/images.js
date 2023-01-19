@@ -77,8 +77,10 @@ import iconMonstr from "../assets/images/resources/iconmonstr.png";
 import icons8 from "../assets/images/resources/Icons8.png";
 import icon54 from "../assets/images/resources/icon54.png";
 import icomoon from "../assets/images/resources/icomoon.png";
+import arrow from "../assets/images/arrow.svg";
 
 export default {
+  arrow,
   ionicons,
   heroIcons,
   phosphorIcons,

@@ -10,6 +10,7 @@ import Work from "./Work";
 import ScrollToTop from "./ScrollToTop";
 import Button from "./Button";
 import ResourcePanel from "./ResourcePanel";
+import ContentPanel from "./ContentPanel";
 export {
   Hero,
   Services,
@@ -23,4 +24,5 @@ export {
   Work,
   Button,
   ResourcePanel,
+  ContentPanel,
 };

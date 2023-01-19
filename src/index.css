@@ -16,12 +16,7 @@
   .blue-text {
     @apply text-blue-500/100;
   }
-  .sub-heading {
-    @apply font-bold text-gray-900/100 text-3xl
-    sm:text-4xl
-    md:text-[45px]
-    mb-5;
-  }
+
   .paragraph {
     @apply font-medium text-base text-gray-400/100 mb-10;
   }
@@ -102,11 +97,7 @@ bg-[rgba(0,0,0,1)];
   hover:text-opacity-100 hover:text-blue-500/100
   block mb-4;
   }
-  .services-paragraph {
-    @apply text-base
-    text-opacity-100 text-[rgba(149,156,177,var(--tw-text-opacity))]
-    pb-7 mb-6 border-b border-opacity-100 border-[rgba(243,243,243,var(--tw-border-opacity))];
-  }
+
   .view-detail-btn {
     @apply font-medium text-opacity-100 text-[rgba(149,156,177,var(--tw-text-opacity))]
     hover:text-opacity-100 hover:text-blue-500/100

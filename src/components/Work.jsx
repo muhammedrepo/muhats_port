@@ -4,6 +4,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import items from "../utils/data";
 import Button from "./Button";
+import ContentPanel from "./ContentPanel";
 
 const Work = () => {
   const [expanded] = useState(false);
@@ -11,15 +12,13 @@ const Work = () => {
   return (
     <div id="work" className="pt-20 pb-16 relative">
       <div className="container mx-auto px-4">
-        <div className="flex flex-wrap -mx-4" data-aos="fade-in">
-          <div className="w-full px-4">
-            <div className="mx-auto mb-12 max-w-[600] text-center">
-              <span className="font-semibold text-lg blue-text block mb-2 uppercase">
-                projects
-              </span>
-              <h2 className="sub-heading">Recent Works</h2>
-            </div>
-          </div>
+        <div className="flex flex-wrap -mx-4">
+          <ContentPanel
+            title="Projects"
+            subtitle="Recent Works"
+            className="flex flex-col items-center"
+          />
+
           <div className="w-full px-4">
             <div className="mb-12 flex flex-wrap items-center justify-center">
               <Project items={dataForDisplay} />

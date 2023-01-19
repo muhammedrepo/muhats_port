@@ -1,6 +1,7 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import Button from "./Button";
+import ContentPanel from "./ContentPanel";
 
 const Result = () => {
   return (
@@ -41,18 +42,13 @@ const Contact = () => {
     <section id="contact" className="py-[120px]">
       <div className="container mx-auto px-4">
         <div className="flex flex-wrap -mx-4">
-          <div className="w-full px-4">
-            <div className="max-w-[600px] mx-auto text-center mb-[50px]">
-              <span className="font-bold text-lg blue-text block mb-2">
-                CONTACT
-              </span>
-              <h2 className="sub-heading">Have a Project in Mind?</h2>
-              <p className="paragraph">
-                Contact me today for a free consultation and no-obligation
-                estimate on website design or digital marketing.
-              </p>
-            </div>
-          </div>
+          <ContentPanel
+            title="Contact"
+            subtitle="Work with me"
+            desc="Contact me today for a free consultation and no-obligation
+                estimate on website design or digital marketing."
+            className="flex justify-center flex-col items-center text-center"
+          />
         </div>
         <div className="flex justify-center -mx-4">
           <div className="w-full lg:w-[75%] px-4">
