@@ -1,5 +1,11 @@
 import { Link } from "react-scroll";
-import { Button, Contact, ResourcePanel, ScrollToTop } from "../components";
+import {
+  Button,
+  Contact,
+  ContentPanel,
+  ResourcePanel,
+  ScrollToTop,
+} from "../components";
 import heroShape from "../assets/images/hero-shape-1.svg";
 import heroShape2 from "../assets/images/hero-shape-2.svg";
 import {
@@ -22,17 +28,12 @@ const Resources = () => {
         <div className="container mx-auto px-4">
           <div className="-mx-4 flex flex-wrap">
             <div className="w-full px-4">
-              <div className="hero-content flex flex-col justify-center  items-center max-w-[570px] mx-auto">
-                <h1 className="mb-5 text-3xl sm:text-4xl md:text-5xl lg:text-[40px] xl:text-5xl font-bold text-center">
-                  Resources for Crafting Beautiful Websites
-                </h1>
-                <p
-                  className="max-w-[540px] text-xl md:text-xl mb-12 text-center 
-    paragraph"
-                >
-                  Resources for hand-crafting Beautiful and Performant Websites.
-                </p>
-              </div>
+              <ContentPanel
+                subtitle="Resources for Crafting Beautiful Websites"
+                desc="Resources for hand-crafting Beautiful and Performant Websites."
+                className="flex flex-col justify-center items-center text-center max-w-lg mx-auto"
+              />
+
               <div className="flex items-center justify-center">
                 {btnData.map((item, index) => (
                   <Button primary roundedCorner key={index}>

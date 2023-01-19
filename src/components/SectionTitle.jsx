@@ -1,5 +1,3 @@
-import React from "react";
-
 const SectionTitle = ({ title, desc }) => {
   return (
     <div className="flex flex-wrap -mx-4">

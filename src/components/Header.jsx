@@ -94,7 +94,7 @@ const Header = () => {
                 <ul className="lg:flex">{renderedLinks}</ul>
               </nav>
             </div>
-            <div class="sm:flex justify-end hidden pr-16 lg:pr-0">
+            <div class="hidden md:flex justify-end pr-16 lg:pr-0">
               <Button primary rounded>
                 <Link
                   activeClass="#fff"

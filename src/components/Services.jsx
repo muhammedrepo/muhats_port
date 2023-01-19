@@ -13,11 +13,15 @@ const Services = () => {
           </a>
           <div className="p-8 sm:p-11 md:p-8 lg:px-6 xl:p-10 2xl:p-11">
             <h3>
-              <a href="#home" className="title">
+              <a
+                href="#home"
+                className="font-bold text-[rgba(29,33,68)]/100 text-lg
+  sm:text-xl hover:text-opacity-100 hover:text-blue-500/100 block mb-4"
+              >
                 {item.name}
               </a>
             </h3>
-            <p className="text-basetext-[rgba(149,156,177,1)] pb-7 mb-6 border-b border-[rgba(243,243,243,1)]">
+            <p className="text-base text-[rgba(149,156,177,1)] pb-7 mb-6 border-b border-[rgba(243,243,243,1)]">
               {item.desc}
             </p>
             <Link
@@ -27,7 +31,9 @@ const Services = () => {
               duration={1000}
               exact="true"
               offset={-80}
-              className="view-detail-btn cursor-pointer"
+              className="font-medium text-[rgba(149,156,177)]/100
+    hover:text-opacity-100 hover:text-blue-500/100
+    text-base inline-flex items-center cursor-pointer"
             >
               Get Started
               <span className="ml-3">
@@ -45,19 +51,12 @@ const Services = () => {
       className="bg-blue-500 bg-opacity-5 pt-20 lg:pt-[120px] pb-12 lg:pb-[90px]"
     >
       <div className="container mx-auto px-4">
-        <div
-          className="
-            flex flex-wrap items-end -mx-4 mb-10
-            lg:mb-[60px]
-          "
-        >
-          <ContentPanel
-            title="What I do"
-            subtitle="I work with clients to create their dream projects."
-            className="max-w-[625px]"
-            data-aos="fade-in"
-          />
-        </div>
+        <ContentPanel
+          title="What I do"
+          subtitle="I work with clients to create their dream projects."
+          className="max-w-[625px]"
+          data-aos="fade-in"
+        />
 
         <div className="flex flex-wrap justify-center -mx-4" data-aos="fade-in">
           {renderedServices}

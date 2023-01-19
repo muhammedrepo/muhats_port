@@ -1,85 +1,62 @@
-import React from "react";
 import { AiFillGithub } from "react-icons/ai";
-
+import share from "../assets/images/share.svg";
 const Menu = ({ items }) => {
-  return (
-    <div className="flex flex-wrap -mx-4 ">
-      {items.map((projectItem) => {
-        const { id, title, img, tags, url, source } = projectItem;
+  const renderedProjects = items.map((projectItem) => {
+    const { id, title, img, tags, url, source } = projectItem;
 
-        return (
-          <article key={id} className="w-full sm:w-1/2 lg:w-1/3 px-4">
-            <div
-              className="card"
-              style={{ boxShadow: "0 5px 15px rgb(0 0 0 / 10%)" }}
-            >
-              <div className="mb-6 overflow-hidden rounded">
-                <img
-                  src={img}
-                  alt={title}
-                  className="max-w-full h-auto w-full"
-                />
-              </div>
-              <div className="item-info">
-                <header className="grid grid-rows-4">
-                  <a
-                    href={url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="project-url"
-                  >
-                    <svg
-                      stroke="currentColor"
-                      fill="currentColor"
-                      stroke-width="0"
-                      viewBox="0 0 576 512"
-                      height="1em"
-                      width="1em"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path d="M568.482 177.448L424.479 313.433C409.3 327.768 384 317.14 384 295.985v-71.963c-144.575.97-205.566 35.113-164.775 171.353 4.483 14.973-12.846 26.567-25.006 17.33C155.252 383.105 120 326.488 120 269.339c0-143.937 117.599-172.5 264-173.312V24.012c0-21.174 25.317-31.768 40.479-17.448l144.003 135.988c10.02 9.463 10.028 25.425 0 34.896zM384 379.128V448H64V128h50.916a11.99 11.99 0 0 0 8.648-3.693c14.953-15.568 32.237-27.89 51.014-37.676C185.708 80.83 181.584 64 169.033 64H48C21.49 64 0 85.49 0 112v352c0 26.51 21.49 48 48 48h352c26.51 0 48-21.49 48-48v-88.806c0-8.288-8.197-14.066-16.011-11.302a71.83 71.83 0 0 1-34.189 3.377c-7.27-1.046-13.8 4.514-13.8 11.859z"></path>
-                    </svg>
-                  </a>
-                  <h4>{title}</h4>
-                  <div className="flex justify-center px-4 space-x-4">
-                    {tags.map((tag, index) => {
-                      return (
-                        <button
-                          className="px-[2%] w-full
-                                        h-12
-                                        inline-flex
-                                        items-center
-                                        justify-center
-                                        text-center text-gray-500 text-base
-                                        bg-blue-100 bg-opacity-50
-                                        transition"
-                          key={index}
-                        >
-                          {tag}
-                        </button>
-                      );
-                    })}
-                  </div>
-                  <div className="flex items-center justify-between w-full bg-blue-100 px-4">
-                    <AiFillGithub className="blue-text" />
+    const renderedTags = tags.map((tag, index) => {
+      return (
+        <button
+          key={index}
+          className="px-[2%] w-full h-12 inline-flex items-center justify-center text-center text-gray-500 text-base bg-blue-100 bg-opacity-50 transition"
+        >
+          {tag}
+        </button>
+      );
+    });
 
-                    <a
-                      href={source}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="blue-text"
-                    >
-                      Source Code
-                    </a>
-                  </div>
-                </header>
+    return (
+      <article key={id} className="w-full sm:w-1/2 lg:w-1/3 px-4">
+        <div
+          className="mb-10 rounded-lg border-b-4 border-transparent bg-[rgba(245,248,255,1)] text-center transition-all duration-300 hover:border-[rgb(62,125,255)]  hover:scale-[1.02]"
+          style={{ boxShadow: "0 5px 15px rgb(0 0 0 / 10%)" }}
+        >
+          <div className="mb-6 overflow-hidden rounded">
+            <img src={img} alt={title} className="max-w-full h-auto w-full" />
+          </div>
+          <div className="item-info">
+            <header className="grid grid-rows-4">
+              <a
+                href={url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-3xl text-white p-3 rounded-[50%] block m-auto border-8 border-solid bg-blue-500 -translate-y-1/2"
+              >
+                <img src={share} alt="" />
+              </a>
+              <h4>{title}</h4>
+              <div className="flex justify-center px-4 space-x-4">
+                {renderedTags}
               </div>
-            </div>
-          </article>
-        );
-      })}
-    </div>
-  );
+              <div className="flex items-center justify-between w-full bg-blue-100 px-4">
+                <AiFillGithub className="text-blue-500" />
+
+                <a
+                  href={source}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-500"
+                >
+                  Source Code
+                </a>
+              </div>
+            </header>
+          </div>
+        </div>
+      </article>
+    );
+  });
+  return <div className="flex flex-wrap -mx-4 ">{renderedProjects}</div>;
 };
 
 export default Menu;

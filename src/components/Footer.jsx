@@ -2,13 +2,7 @@ import { Logo, SocialMedia } from "../components";
 
 const Footer = () => {
   return (
-    <footer
-      className="
-  relative z-10  
-    bg-[rgba(74,108,247,var(--tw-bg-opacity))] bg-opacity-5 pt-[50px]
- 
-"
-    >
+    <footer className="relative z-10 bg-[rgba(74,108,247)]/5 pt-[50px]">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-center flex-wrap -mx-4">
           <div className="flex items-center justify-center w-full md:w-1/2 lg:w-1/3 xl:w-[41.666667%] px-4">
@@ -21,87 +15,11 @@ const Footer = () => {
               <SocialMedia />
             </div>
           </div>
-          {/* <div className="footer-box">
-            <div className="mb-16">
-              <h2 className="footer-title">Useful Links</h2>
-              <ul>
-                <li>
-                  <Link to="/" className="footer-list">
-                    Home
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/projects" className="footer-list">
-                    Projects
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/resources" className="footer-list">
-                    Resources
-                  </Link>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div className="footer-box">
-            <div className="mb-16">
-              <h2 className="footer-title">Terms</h2>
-              <ul>
-                <li>
-                  <a href="#home" className="footer-list">
-                    TOS
-                  </a>
-                </li>
-                <li>
-                  <a href="#home" className="footer-list">
-                    Privacy Policy
-                  </a>
-                </li>
-                <li>
-                  <a href="#home" className="footer-list">
-                    Refund Policy
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div className="footer-box">
-            <div className="mb-16">
-              <h2 className="footer-title">Support & Help</h2>
-              <ul>
-                <li>
-                  <a href="#home" className="footer-list">
-                    Open Support Ticket
-                  </a>
-                </li>
-                <li>
-                  <a href="#home" className="footer-list">
-                    Terms of Use
-                  </a>
-                </li>
-                <li>
-                  <a href="#home" className="footer-list">
-                    About
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div> */}
         </div>
       </div>
-      <div
-        className="py-8
-    bg-[rgba(74,108,247,var(--tw-bg-opacity))] bg-opacity-10"
-      >
+      <div className="py-8 bg-[rgba(74,108,247)]/10">
         <div className="container mx-auto px-4">
-          <p
-            className="
-        text-opacity-100
-    text-[rgba(149,156,177,var(--tw-text-opacity))]
-        
-        text-base text-center
-      "
-          >
+          <p className=" text-[rgba(149,156,177)]/100 text-base text-center">
             &copy; {new Date().getFullYear()} Crafted by Muhammed Tijani. All
             rights reserved. Built with{" "}
             <a
