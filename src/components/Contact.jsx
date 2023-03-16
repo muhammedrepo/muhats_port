@@ -1,7 +1,7 @@
-import React, { useRef, useState } from "react";
-import emailjs from "@emailjs/browser";
-import Button from "./Button";
-import ContentPanel from "./ContentPanel";
+import React, { useRef, useState } from 'react';
+import emailjs from '@emailjs/browser';
+import Button from './Button';
+import ContentPanel from './ContentPanel';
 
 const Result = () => {
   return (
@@ -18,10 +18,10 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        "service_avs0jkc",
-        "template_9z61ko5",
+        'service_avs0jkc',
+        'template_9z61ko5',
         form.current,
-        "Kfjj5oTlX2byZ9Vnl"
+        'Kfjj5oTlX2byZ9Vnl'
       )
       .then(
         (result) => {
@@ -45,8 +45,7 @@ const Contact = () => {
           <ContentPanel
             title="Contact"
             subtitle="Work with me"
-            desc="Contact me today for a free consultation and no-obligation
-                estimate on website design or digital marketing."
+            desc="I'm eager to learn more about your project. Please do not hesitate to contact me."
             className="flex justify-center flex-col items-center text-center"
           />
         </div>

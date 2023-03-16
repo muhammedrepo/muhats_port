@@ -1,4 +1,4 @@
-import { ContentPanel, SocialMedia } from "../components";
+import { ContentPanel, SocialMedia } from '../components';
 
 const About = () => {
   return (
@@ -6,13 +6,9 @@ const About = () => {
       <div className="container mx-auto px-4">
         <div className="flex flex-wrap -mx-4">
           <ContentPanel
-            title="About me"
-            subtitle="Better design, better experience"
-            desc="I consult, design, create, and scale innovative online, mobile,
-              and custom software solutions. Every project is a milestone for
-              me. As a software developer, I custom-tailor digital solutions
-              with industry best practices for Fortune 500 companies, SMEs, and
-              startups throughout the world."
+            title="About"
+            subtitle="Better experience"
+            desc="As a front-end developer, I have a proven track record of delivering fast, clean, and easy-to-maintain web applications that scale seamlessly. With over 5 years of experience, I specialize in React, Next.js, Node.js, and other frameworks. My workflow involves a thorough understanding of project requirements, documentation, estimation, installation, and development."
             className="lg:w-1/2 xl:w-[58.333333%] mb-8 lg:mb-0"
             data-aos="fade-in"
           />

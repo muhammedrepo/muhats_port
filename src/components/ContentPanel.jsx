@@ -1,7 +1,7 @@
-import className from "classnames";
+import className from 'classnames';
 
 const ContentPanel = ({ children, title, subtitle, desc, ...rest }) => {
-  const classes = className(rest.className, "w-full px-4");
+  const classes = className(rest.className, 'w-full px-4');
   return (
     <div {...rest} className={classes}>
       <span className="font-bold text-blue-500/100 text-lg md:text-xl mb-4 uppercase">

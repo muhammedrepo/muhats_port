@@ -1,8 +1,8 @@
-import { NavLink } from "react-router-dom";
-import { Link } from "react-scroll";
-import heroShape from "../assets/images/hero-shape-1.svg";
-import heroShape2 from "../assets/images/hero-shape-2.svg";
-import Button from "./Button";
+import { NavLink } from 'react-router-dom';
+import { Link } from 'react-scroll';
+import heroShape from '../assets/images/hero-shape-1.svg';
+import heroShape2 from '../assets/images/hero-shape-2.svg';
+import Button from './Button';
 
 const Hero = () => {
   return (
@@ -13,17 +13,15 @@ const Hero = () => {
       <div className="container mx-auto px-4">
         <div className="-mx-4 flex flex-wrap">
           <div className="w-full px-4" data-aos="fade-in">
-            <div className="flex flex-col justify-center  items-center max-w-[570px] mx-auto">
-              <span className="font-bold blue-text text-lg md:text-xl mb-3 uppercase">
-                HI, my name is
+            <div className="flex flex-col justify-center  items-center max-w-xl mx-auto">
+              <span className="font-medium paragraph blue-text text-lg md:text-xl mb-3">
+                HI, my name is Muhammed Tijani
               </span>
-              <h1 className="mb-5 text-3xl sm:text-4xl md:text-5xl lg:text-[40px] xl:text-5xl font-bold text-center">
-                Muhammed T.
-              </h1>
-              <p className="max-w-[540px] text-xl md:text-xl paragraph text-center">
-                I am a software engineer who specializes in crafting amazing
-                digital experiences.
-              </p>
+              <h2 className="mb-5 text-xl sm:text-2xl lg:text-3xl font-bold text-center">
+                I’m a front-end developer, specialized in development of web
+                applications using React, Next.js, Node.js & more
+              </h2>
+
               <div className="flex justify-center items-center space-x-4">
                 <Button primary rounded>
                   <Link

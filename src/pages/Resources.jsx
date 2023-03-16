@@ -1,13 +1,13 @@
-import { Link } from "react-scroll";
+import { Link } from 'react-scroll';
 import {
   Button,
   Contact,
   ContentPanel,
   ResourcePanel,
   ScrollToTop,
-} from "../components";
-import heroShape from "../assets/images/hero-shape-1.svg";
-import heroShape2 from "../assets/images/hero-shape-2.svg";
+} from '../components';
+import heroShape from '../assets/images/hero-shape-1.svg';
+import heroShape2 from '../assets/images/hero-shape-2.svg';
 import {
   colorData,
   cssresource,
@@ -18,7 +18,7 @@ import {
   jscriptData,
   btnData,
   tools,
-} from "../utils";
+} from '../utils';
 
 const Resources = () => {
   return (

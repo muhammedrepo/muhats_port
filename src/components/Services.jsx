@@ -1,7 +1,7 @@
-import { Link } from "react-scroll";
-import { MdOutlineArrowRightAlt } from "react-icons/md";
-import { serviceData } from "../utils/serviceData";
-import ContentPanel from "./ContentPanel";
+import { Link } from 'react-scroll';
+import { MdOutlineArrowRightAlt } from 'react-icons/md';
+import { serviceData } from '../utils/serviceData';
+import ContentPanel from './ContentPanel';
 
 const Services = () => {
   const renderedServices = serviceData.map((item) => {
@@ -53,7 +53,7 @@ const Services = () => {
       <div className="container mx-auto px-4">
         <ContentPanel
           title="What I do"
-          subtitle="I work with clients to create their dream projects."
+          subtitle="I have the unique ability to turn your ideas into a tangible reality."
           className="max-w-[625px]"
           data-aos="fade-in"
         />
