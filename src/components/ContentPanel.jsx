@@ -9,7 +9,7 @@ const ContentPanel = ({ children, title, subtitle, desc, ...rest }) => {
       </span>
       <h2
         className="font-bold text-gray-900/100 text-3xl
-    sm:text-4xl md:text-[45px] mb-5 max-w-md"
+    sm:text-4xl  mb-5 max-w-md"
       >
         {subtitle}
       </h2>

@@ -17,7 +17,7 @@ const Hero = () => {
               <span className="font-medium paragraph blue-text text-lg md:text-xl mb-3">
                 HI, my name is Muhammed Tijani
               </span>
-              <h2 className="mb-5 text-xl sm:text-2xl lg:text-3xl font-bold text-center">
+              <h2 className="mb-5 text-xl sm:text-2xl lg:text-2xl font-bold text-center">
                 I’m a front-end developer, specialized in development of web
                 applications using React, Next.js, Node.js & more
               </h2>
