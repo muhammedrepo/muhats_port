@@ -54,16 +54,16 @@ const menu = [
     desc: 'Crypto News App',
   },
 
-  {
-    id: 6,
-    title: 'Search App',
-    category: 'react',
-    url: 'https://goggle.muhats.com',
-    source: '',
-    tags: ['React', 'Tailwind'],
-    img: `${images.p8}`,
-    desc: 'Search App',
-  },
+  // {
+  //   id: 6,
+  //   title: 'Search App',
+  //   category: 'react',
+  //   url: 'https://goggle.muhats.com',
+  //   source: '',
+  //   tags: ['React', 'Tailwind'],
+  //   img: `${images.p8}`,
+  //   desc: 'Search App',
+  // },
 
   {
     id: 7,
@@ -96,16 +96,16 @@ const menu = [
     img: `${images.p11}`,
     desc: `Portfolio Template `,
   },
-  {
-    id: 10,
-    title: 'Travel Advisor',
-    category: 'react',
-    url: 'https://hotelapp.muhats.com/',
-    source: 'https://github.com/coolzyte/travel_advisor',
-    tags: ['React', 'RapidApi', 'MaterialUI'],
-    img: `${images.p12}`,
-    desc: `Browse Hotels Around the world `,
-  },
+  // {
+  //   id: 10,
+  //   title: 'Travel Advisor',
+  //   category: 'react',
+  //   url: 'https://hotelapp.muhats.com/',
+  //   source: 'https://github.com/coolzyte/travel_advisor',
+  //   tags: ['React', 'RapidApi', 'MaterialUI'],
+  //   img: `${images.p12}`,
+  //   desc: `Browse Hotels Around the world `,
+  // },
 
   {
     id: 11,
