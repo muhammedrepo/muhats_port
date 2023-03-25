@@ -67,13 +67,13 @@ const menu = [
 
   {
     id: 7,
-    title: 'Portfolio',
-    category: 'react',
-    url: 'https://portfolio-v-1.muhats.com/',
-    source: '',
-    tags: ['React', 'styled-component'],
-    img: `${images.p7}`,
-    desc: `modern portfolio template`,
+    title: 'Image To Text',
+    category: 'Typescript',
+    url: 'https://image-text.muhats.com/',
+    source: 'https://github.com/coolzyte/image-text',
+    tags: ['React', 'Typescript', 'TailwindCSS'],
+    img: `${images.p20}`,
+    desc: `Image to text converter`,
   },
   {
     id: 8,
@@ -178,6 +178,16 @@ const menu = [
     tags: ['React', 'CSS'],
     img: `${images.p4}`,
     desc: `Restaurant website template `,
+  },
+  {
+    id: 18,
+    title: 'Portfolio',
+    category: 'react',
+    url: 'https://portfolio-v-1.muhats.com/',
+    source: '',
+    tags: ['React', 'styled-component'],
+    img: `${images.p7}`,
+    desc: `modern portfolio template`,
   },
 ];
 export default menu;
