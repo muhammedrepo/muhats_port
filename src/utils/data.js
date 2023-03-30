@@ -54,16 +54,16 @@ const menu = [
     desc: 'Crypto News App',
   },
 
-  // {
-  //   id: 6,
-  //   title: 'Search App',
-  //   category: 'react',
-  //   url: 'https://goggle.muhammedtijani.com',
-  //   source: '',
-  //   tags: ['React', 'Tailwind'],
-  //   img: `${images.p8}`,
-  //   desc: 'Search App',
-  // },
+  {
+    id: 6,
+    title: 'Monst Clone',
+    category: 'Typescript',
+    url: 'https://monst-clone.muhammedtijani.com/',
+    source: 'https://github.com/coolzyte/monst',
+    tags: ['React', 'Tailwind', 'Typescript'],
+    img: `${images.p21}`,
+    desc: 'Full multipurpose website',
+  },
 
   {
     id: 7,
@@ -189,5 +189,15 @@ const menu = [
     img: `${images.p7}`,
     desc: `modern portfolio template`,
   },
+  // {
+  //   id: 19,
+  //   title: 'Search App',
+  //   category: 'react',
+  //   url: 'https://goggle.muhammedtijani.com',
+  //   source: '',
+  //   tags: ['React', 'Tailwind'],
+  //   img: `${images.p8}`,
+  //   desc: 'Search App',
+  // },
 ];
 export default menu;

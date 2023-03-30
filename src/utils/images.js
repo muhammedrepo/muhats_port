@@ -27,6 +27,7 @@ import p17 from '../assets/images/projects/17.png';
 import p18 from '../assets/images/projects/18.png';
 import p19 from '../assets/images/projects/19.png';
 import p20 from '../assets/images/projects/20.png';
+import p21 from '../assets/images/projects/21.png';
 
 import vscode from '../assets/images/resources/vscode.png';
 import codepen from '../assets/images/resources/codepen.png';
@@ -139,6 +140,7 @@ export default {
   p18,
   p19,
   p20,
+  p21,
   s1,
   s2,
   s3,
