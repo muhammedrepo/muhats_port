@@ -46,10 +46,10 @@ const menu = [
   {
     id: 5,
     title: 'Crypto News',
-    category: 'mern',
+    category: 'react',
     url: 'https://crypto-news.muhammedtijani.com/',
     source: 'https://github.com/coolzyte/cryptonews',
-    tags: ['React', 'MaterialUI'],
+    tags: ['React', 'Ant Design', 'ChartJs'],
     img: `${images.p1}`,
     desc: 'Crypto News App',
   },
