@@ -89,7 +89,7 @@ const menu = [
   {
     id: 9,
     title: 'Personal Portfolio',
-    category: 'react',
+    category: 'Typescript',
     url: 'https://portfolio.muhammedtijani.com/',
     source: 'https://github.com/coolzyte/portfolio_v3',
     tags: ['React', 'Typescript', 'Styled-Components'],
