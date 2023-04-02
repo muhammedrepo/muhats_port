@@ -1,9 +1,9 @@
-import Project from "../components/Project";
-import { useState } from "react";
-import { Link } from "react-router-dom";
-import items from "../utils/data";
-import Button from "./Button";
-import ContentPanel from "./ContentPanel";
+import Project from '../components/Project';
+import { useState } from 'react';
+import { Link } from 'react-router-dom';
+import items from '../utils/data';
+import Button from './Button';
+import ContentPanel from './ContentPanel';
 
 const Work = () => {
   const [expanded] = useState(false);
@@ -22,7 +22,7 @@ const Work = () => {
             <div className="mb-12 flex flex-wrap items-center justify-center">
               <Project items={dataForDisplay} />
 
-              <Button primary rounded>
+              <Button primary>
                 {/* {expanded ? "Show Less" : "Show More"} */}
                 <Link to="/projects"> View More</Link>
               </Button>

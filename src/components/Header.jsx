@@ -1,8 +1,8 @@
-import { useEffect, useState } from "react";
-import { NavLink } from "react-router-dom";
-import { Link, animateScroll as scroll } from "react-scroll";
-import Button from "./Button";
-import Logo from "./Logo";
+import { useEffect, useState } from 'react';
+import { NavLink } from 'react-router-dom';
+import { Link, animateScroll as scroll } from 'react-scroll';
+import Button from './Button';
+import Logo from './Logo';
 
 const Header = () => {
   const [switchToggled, setSwitchToggled] = useState(false);
@@ -21,7 +21,7 @@ const Header = () => {
   };
 
   useEffect(() => {
-    window.addEventListener("scroll", animateTopBar);
+    window.addEventListener('scroll', animateTopBar);
   }, []);
 
   const toggleHome = () => {
@@ -30,16 +30,16 @@ const Header = () => {
 
   const links = [
     {
-      menu: "Home",
-      path: "/",
+      menu: 'Home',
+      path: '/',
     },
     {
-      menu: "Projects",
-      path: "projects",
+      menu: 'Projects',
+      path: 'projects',
     },
     {
-      menu: "Resources",
-      path: "resources",
+      menu: 'Resources',
+      path: 'resources',
     },
   ];
 
@@ -60,8 +60,8 @@ const Header = () => {
       className={`fixed top-0 w-full flex items-center
         ${
           topBarScroll
-            ? " bg-white/80  backdrop-blur-sm backdrop-filter shadow-md z-50 transition-all duration-300"
-            : "bg-transparent left-0 z-50 "
+            ? ' bg-white/80  backdrop-blur-sm backdrop-filter shadow-md z-50 transition-all duration-300'
+            : 'bg-transparent left-0 z-50 '
         }
           
       `}
@@ -74,7 +74,7 @@ const Header = () => {
               <button
                 onClick={ToggleSwitch}
                 className={`block absolute right-4 top-1/2 -translate-y-1/2 lg:hidden px-3 py-1.5 rounded-lg
-                  ${switchToggled ? "navbarTogglerActive " : ""}
+                  ${switchToggled ? 'navbarTogglerActive ' : ''}
                     
                 `}
               >
@@ -86,8 +86,8 @@ const Header = () => {
                 className={`absolute py-5 lg:py-0 lg:px-4 xl:px-6 lg:bg-transparent rounded-lg max-w-[250px] w-full lg:max-w-full lg:w-full right-4 top-full lg:block lg:static
                   ${
                     switchToggled
-                      ? " bg-white/100 block"
-                      : " bg-[rgba(29,33,68,10)] hidden"
+                      ? ' bg-white/100 block'
+                      : ' bg-[rgba(29,33,68,10)] hidden'
                   }
                     `}
               >
@@ -95,7 +95,7 @@ const Header = () => {
               </nav>
             </div>
             <div class="hidden md:flex justify-end pr-16 lg:pr-0">
-              <Button primary rounded>
+              <Button primary>
                 <Link
                   activeClass="#fff"
                   to="contact"

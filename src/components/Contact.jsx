@@ -107,7 +107,7 @@ const Contact = () => {
                 </div>
                 <div className="w-full px-4">
                   <div className="pt-4 text-center">
-                    <Button primary rounded>
+                    <Button type="submit" primary>
                       Send
                     </Button>
                   </div>
