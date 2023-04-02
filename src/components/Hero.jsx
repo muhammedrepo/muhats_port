@@ -14,8 +14,8 @@ const Hero = () => {
         <div className="-mx-4 flex flex-wrap">
           <div className="w-full px-4" data-aos="fade-in">
             <div className="flex flex-col justify-center  items-center max-w-xl mx-auto">
-              <span className="font-medium paragraph blue-text text-lg md:text-xl mb-3">
-                HI, my name is Muhammed Tijani
+              <span className="font-medium paragraph text-gray-500 text-lg md:text-xl mb-3">
+                Hi, my name is Muhammed Tijani
               </span>
               <h2 className="mb-5 text-xl sm:text-2xl lg:text-2xl font-bold text-center">
                 I’m a front-end developer, specialized in development of web
@@ -23,7 +23,7 @@ const Hero = () => {
               </h2>
 
               <div className="flex justify-center items-center space-x-4">
-                <Button primary rounded>
+                <Button primary>
                   <Link
                     activeClass="#fff"
                     to="work"
@@ -36,7 +36,7 @@ const Hero = () => {
                     Projects
                   </Link>
                 </Button>
-                <Button secondary rounded>
+                <Button secondary>
                   <NavLink to="/resources">Resources</NavLink>
                 </Button>
               </div>
