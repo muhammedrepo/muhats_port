@@ -147,16 +147,16 @@ const menu = [
     img: `${images.p16}`,
     desc: `Hoobank react website`,
   },
-  {
-    id: 15,
-    title: 'Pavo Website',
-    category: 'react',
-    url: 'https://pavo.muhammedtijani.com/',
-    source: 'https://github.com/coolzyte/pavo',
-    tags: ['React', 'Tailwind'],
-    img: `${images.p17}`,
-    desc: `Pavo react website`,
-  },
+  // {
+  //   id: 15,
+  //   title: 'Pavo Website',
+  //   category: 'react',
+  //   url: 'https://pavo.muhammedtijani.com/',
+  //   source: 'https://github.com/coolzyte/pavo',
+  //   tags: ['React', 'Tailwind'],
+  //   img: `${images.p17}`,
+  //   desc: `Pavo react website`,
+  // },
 
   {
     id: 16,
@@ -169,16 +169,16 @@ const menu = [
     desc: `Exciting Roll Dice Game `,
   },
 
-  {
-    id: 17,
-    title: 'Restaurant',
-    category: 'react',
-    url: 'https://restaurant-app.muhammedtijani.com/',
-    source: 'https://github.com/coolzyte/restaurant-app',
-    tags: ['React', 'CSS'],
-    img: `${images.p4}`,
-    desc: `Restaurant website template `,
-  },
+  // {
+  //   id: 17,
+  //   title: 'Restaurant',
+  //   category: 'react',
+  //   url: 'https://restaurant-app.muhammedtijani.com/',
+  //   source: 'https://github.com/coolzyte/restaurant-app',
+  //   tags: ['React', 'CSS'],
+  //   img: `${images.p4}`,
+  //   desc: `Restaurant website template `,
+  // },
   {
     id: 18,
     title: 'Portfolio',
