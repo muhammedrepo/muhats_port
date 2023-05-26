@@ -21,7 +21,7 @@ const Services = () => {
                 {item.name}
               </a>
             </h3>
-            <p className="text-base text-[rgba(149,156,177,1)] pb-7 mb-6 border-b border-[rgba(243,243,243,1)]">
+            <p className="pb-7 mb-6 border-b border-[rgba(243,243,243,1)]">
               {item.desc}
             </p>
             <Link

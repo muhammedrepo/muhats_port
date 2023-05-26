@@ -9,7 +9,7 @@ const About = () => {
           <ContentPanel
             title="About"
             subtitle="Better experience"
-            desc="As a front-end developer, I have a proven track record of delivering fast, clean, and easy-to-maintain web applications that scale seamlessly. With over 5 years of experience, I specialize in React, Next.js, Node.js, and other frameworks. My workflow involves a thorough understanding of project requirements, documentation, estimation, installation, and development."
+            desc="As a full-stack developer, I have a proven track record of delivering fast, clean, and easy-to-maintain web applications that scale seamlessly. With over 9 years of experience, I specialize in MERN stack(MongoDB, ExpressJS, ReactJS, Node.js), and other frameworks. My workflow involves a thorough understanding of project requirements, documentation, estimation, installation, and development."
             className="lg:w-1/2 xl:w-[58.333333%] mb-8 lg:mb-0"
             data-aos="fade-in"
           />

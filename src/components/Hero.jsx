@@ -15,10 +15,10 @@ const Hero = () => {
           <div className="w-full px-4" data-aos="fade-in">
             <div className="flex flex-col justify-center  items-center max-w-xl mx-auto">
               <span className="font-medium paragraph text-gray-500 text-lg md:text-xl mb-3">
-                Hi, my name is Muhammed Tijani
+                Hi, my name is Muhammed Tijani.
               </span>
               <h2 className="mb-5 text-xl sm:text-2xl lg:text-2xl font-bold text-center">
-                I’m a front-end developer, specialized in development of web
+                I’m a full-stack developer, specialized in development of web
                 applications using React, Next.js, Node.js & more
               </h2>
 

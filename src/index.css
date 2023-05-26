@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 @layer base {
-  .paragraph {
-    @apply font-medium text-base text-gray-400/100 mb-10;
+  p {
+    @apply font-medium text-base text-gray-500 mb-10;
   }
   .icon {
     @apply w-[70px]

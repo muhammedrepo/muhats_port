@@ -13,9 +13,7 @@ const ContentPanel = ({ children, title, subtitle, desc, ...rest }) => {
       >
         {subtitle}
       </h2>
-      <p className="font-medium text-base text-gray-400/100 mb-10 max-w-[570px]">
-        {desc}
-      </p>
+      <p className="mb-10 max-w-[570px]">{desc}</p>
       {children}
     </div>
   );
