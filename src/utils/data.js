@@ -3,15 +3,14 @@ import images from './images';
 const menu = [
   {
     id: 1,
-    title: 'E-commerce',
-    category: 'Next',
-    url: 'https://ecom-muhats.vercel.app/',
-    source: 'https://github.com/coolzyte/ecommerce_sanity_stripe',
-    tags: ['NextJS', 'Sanity', 'Stripe'],
-    img: `${images.p9}`,
-    desc: 'E-commerce App',
+    title: 'Elyssi E-commerce',
+    category: 'react',
+    url: 'https://elyssi.vercel.app/',
+    source: 'https://github.com/muhammedrepo/elyssi',
+    tags: ['React', 'TailwindCSS'],
+    img: `${images.p19}`,
+    desc: `E-commerce app`,
   },
-
   {
     id: 2,
     title: 'Realtor',
@@ -24,13 +23,13 @@ const menu = [
   },
   {
     id: 3,
-    title: 'Ecom',
-    category: 'react',
-    url: 'https://ecom2.muhammedtijani.com/home',
-    source: 'https://github.com/coolzyte/elysi-commerce',
-    tags: ['React', 'TailwindCSS'],
-    img: `${images.p19}`,
-    desc: `E-commerce app`,
+    title: 'Monst Clone',
+    category: 'Typescript',
+    url: 'https://monst-clone.muhammedtijani.com/',
+    source: 'https://github.com/coolzyte/monst',
+    tags: ['React', 'Tailwind', 'Typescript'],
+    img: `${images.p21}`,
+    desc: 'Full multipurpose website',
   },
   {
     id: 4,
@@ -42,6 +41,17 @@ const menu = [
     img: `${images.p18}`,
     desc: `Job board app`,
   },
+
+  // {
+  //   id: 6,
+  //   title: 'E-commerce',
+  //   category: 'Next',
+  //   url: 'https://ecom-muhats.vercel.app/',
+  //   source: 'https://github.com/coolzyte/ecommerce_sanity_stripe',
+  //   tags: ['NextJS', 'Sanity', 'Stripe'],
+  //   img: `${images.p9}`,
+  //   desc: 'E-commerce App',
+  // },
 
   {
     id: 5,
@@ -56,17 +66,6 @@ const menu = [
 
   {
     id: 6,
-    title: 'Monst Clone',
-    category: 'Typescript',
-    url: 'https://monst-clone.muhammedtijani.com/',
-    source: 'https://github.com/coolzyte/monst',
-    tags: ['React', 'Tailwind', 'Typescript'],
-    img: `${images.p21}`,
-    desc: 'Full multipurpose website',
-  },
-
-  {
-    id: 7,
     title: 'Image To Text',
     category: 'Typescript',
     url: 'https://image-text.muhammedtijani.com/',
@@ -75,27 +74,27 @@ const menu = [
     img: `${images.p20}`,
     desc: `Image to text converter`,
   },
-  {
-    id: 8,
-    title: 'Dev Portfolio',
-    category: 'react',
-    url: 'https://smato-clone.muhammedtijani.com/',
-    source: 'https://github.com/coolzyte/smato-clone-react',
-    tags: ['React', 'Styled-component', 'TailwindCSS'],
-    img: `${images.p13}`,
-    desc: `Browse Hotels Around the world `,
-  },
+  // {
+  //   id: 8,
+  //   title: 'Dev Portfolio',
+  //   category: 'react',
+  //   url: 'https://smato-clone.muhammedtijani.com/',
+  //   source: 'https://github.com/coolzyte/smato-clone-react',
+  //   tags: ['React', 'Styled-component', 'TailwindCSS'],
+  //   img: `${images.p13}`,
+  //   desc: `Browse Hotels Around the world `,
+  // },
 
-  {
-    id: 9,
-    title: 'Personal Portfolio',
-    category: 'Typescript',
-    url: 'https://portfolio.muhammedtijani.com/',
-    source: 'https://github.com/coolzyte/portfolio_v3',
-    tags: ['React', 'Typescript', 'Styled-Components'],
-    img: `${images.p11}`,
-    desc: `Portfolio Template `,
-  },
+  // {
+  //   id: 9,
+  //   title: 'Personal Portfolio',
+  //   category: 'Typescript',
+  //   url: 'https://portfolio.muhammedtijani.com/',
+  //   source: 'https://github.com/coolzyte/portfolio_v3',
+  //   tags: ['React', 'Typescript', 'Styled-Components'],
+  //   img: `${images.p11}`,
+  //   desc: `Portfolio Template `,
+  // },
   // {
   //   id: 10,
   //   title: 'Travel Advisor',
@@ -108,7 +107,7 @@ const menu = [
   // },
 
   {
-    id: 11,
+    id: 7,
     title: 'Startup',
     category: 'react',
     url: 'https://startup.muhammedtijani.com/',
@@ -118,7 +117,7 @@ const menu = [
     desc: `Startup focus template`,
   },
   {
-    id: 12,
+    id: 8,
     title: 'Manage Landing Page',
     category: 'react',
     url: 'https://manage-landing-page.muhammedtijani.com/',
@@ -128,7 +127,7 @@ const menu = [
     desc: `Manage landing page`,
   },
   {
-    id: 13,
+    id: 9,
     title: 'User Accounts Activity',
     category: 'react',
     url: 'https://frontend-interview-test.netlify.app/',
@@ -138,7 +137,7 @@ const menu = [
     desc: `User accounts analytics`,
   },
   {
-    id: 14,
+    id: 10,
     title: 'Hoobank website',
     category: 'react',
     url: 'https://hoobank.muhammedtijani.com/',
@@ -159,7 +158,7 @@ const menu = [
   // },
 
   {
-    id: 16,
+    id: 11,
     title: 'Dice Game',
     category: 'javascript',
     url: 'https://roll-a-dice.muhammedtijani.com/',
@@ -179,16 +178,16 @@ const menu = [
   //   img: `${images.p4}`,
   //   desc: `Restaurant website template `,
   // },
-  {
-    id: 18,
-    title: 'Portfolio',
-    category: 'react',
-    url: 'https://portfolio-v-1.muhammedtijani.com/',
-    source: '',
-    tags: ['React', 'styled-component'],
-    img: `${images.p7}`,
-    desc: `modern portfolio template`,
-  },
+  // {
+  //   id: 18,
+  //   title: 'Portfolio',
+  //   category: 'react',
+  //   url: 'https://portfolio-v-1.muhammedtijani.com/',
+  //   source: '',
+  //   tags: ['React', 'styled-component'],
+  //   img: `${images.p7}`,
+  //   desc: `modern portfolio template`,
+  // },
   // {
   //   id: 19,
   //   title: 'Search App',

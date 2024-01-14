@@ -10,8 +10,8 @@ const Result = () => {
 };
 
 const Contact = () => {
-  const [result, showResult] = useState(false);
-  const form = useRef();
+  const [result, setResult] = useState(false);
+  const formRef = useRef();
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -20,24 +20,26 @@ const Contact = () => {
       .sendForm(
         'service_avs0jkc',
         'template_9z61ko5',
-        form.current,
+        formRef.current,
         'Kfjj5oTlX2byZ9Vnl'
       )
       .then(
-        (result) => {
-          console.log(result.text);
+        (response) => {
+          console.log(response.text);
         },
         (error) => {
           console.log(error.text);
         }
       );
+
     e.target.reset();
-    showResult(true);
+    setResult(true);
   };
-  // hide result
+
   setTimeout(() => {
-    showResult(false);
+    setResult(false);
   }, 5000);
+
   return (
     <section id="contact" className="py-[120px]">
       <div className="container mx-auto px-4">
@@ -51,9 +53,9 @@ const Contact = () => {
         </div>
         <div className="flex justify-center -mx-4">
           <div className="w-full lg:w-[75%] px-4">
-            <form ref={form} onSubmit={sendEmail}>
+            <form ref={formRef} onSubmit={sendEmail}>
               <div className="text-blue-600 mb-3 text-center font-medium">
-                {result ? <Result /> : null}
+                {result && <Result />}
               </div>
               <div className="flex flex-wrap -mx-4">
                 <div className="w-full md:w-1/2 px-4">

@@ -1,11 +1,16 @@
 import { ContentPanel, SocialMedia } from '../components';
 import AboutIcon from './AboutIcon';
 
+/**
+ * Represents a section of a web page that displays information about the developer and provides a way to connect with them.
+ * @returns {JSX.Element} The rendered section of the web page.
+ */
 const About = () => {
   return (
     <section id="about" className="pt-[145px] pb-[120px] relative z-10">
       <div className="container mx-auto px-4">
         <div className="flex flex-wrap -mx-4">
+          {/* Content Panel 1 */}
           <ContentPanel
             title="About"
             subtitle="Better experience"
@@ -14,6 +19,7 @@ const About = () => {
             data-aos="fade-in"
           />
 
+          {/* Content Panel 2 */}
           <ContentPanel
             subtitle="Connect With Me"
             desc="Discuss your project. Contact me for a free, no-obligation
@@ -23,10 +29,12 @@ const About = () => {
             className="lg:w-1/2 xl:w-[41.666667%]"
             data-aos="fade-in"
           >
+            {/* Social Media Component */}
             <SocialMedia />
           </ContentPanel>
         </div>
       </div>
+      {/* About Icon */}
       <div className="absolute right-0 top-1/2 -translate-y-1/2">
         <AboutIcon />
       </div>

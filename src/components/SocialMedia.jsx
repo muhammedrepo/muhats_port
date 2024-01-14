@@ -1,16 +1,16 @@
-import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
 
 const medias = [
   {
-    url: "https://twitter.com/muhats_",
+    url: 'https://twitter.com/muhammedtijani_',
     icon: <FaTwitter />,
   },
   {
-    url: "https://www.linkedin.com/in/muhammedtijani/",
+    url: 'https://www.linkedin.com/in/muhammedtijani/',
     icon: <FaLinkedin />,
   },
   {
-    url: "https://github.com/coolzyte",
+    url: 'https://github.com/muhammedrepo',
     icon: <FaGithub />,
   },
 ];

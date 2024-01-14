@@ -1,9 +1,15 @@
+import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { Link } from 'react-scroll';
 import heroShape from '../assets/images/hero-shape-1.svg';
 import heroShape2 from '../assets/images/hero-shape-2.svg';
 import Button from './Button';
 
+/**
+ * Represents a hero section on a web page.
+ * Displays a greeting, a description, and two buttons for navigating to different sections of the page.
+ * @returns {JSX.Element} The JSX element representing the hero section of the web page.
+ */
 const Hero = () => {
   return (
     <div
@@ -13,7 +19,7 @@ const Hero = () => {
       <div className="container mx-auto px-4">
         <div className="-mx-4 flex flex-wrap">
           <div className="w-full px-4" data-aos="fade-in">
-            <div className="flex flex-col justify-center  items-center max-w-xl mx-auto">
+            <div className="flex flex-col justify-center items-center max-w-xl mx-auto">
               <span className="font-medium paragraph text-gray-500 text-lg md:text-xl mb-3">
                 Hi, my name is Muhammed Tijani.
               </span>
