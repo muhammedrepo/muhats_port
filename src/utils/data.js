@@ -42,16 +42,16 @@ const menu = [
     desc: `Job board app`,
   },
 
-  // {
-  //   id: 6,
-  //   title: 'E-commerce',
-  //   category: 'Next',
-  //   url: 'https://ecom-muhats.vercel.app/',
-  //   source: 'https://github.com/coolzyte/ecommerce_sanity_stripe',
-  //   tags: ['NextJS', 'Sanity', 'Stripe'],
-  //   img: `${images.p9}`,
-  //   desc: 'E-commerce App',
-  // },
+  {
+    id: 6,
+    title: 'Techx Website',
+    category: 'Next',
+    url: 'https://techx-website.vercel.app/',
+    source: 'https://github.com/muhammedrepo/techx-website',
+    tags: ['NextJS', 'Typescript', 'Bootstrap'],
+    img: `${images.p9}`,
+    desc: 'Techx website template',
+  },
 
   {
     id: 5,
