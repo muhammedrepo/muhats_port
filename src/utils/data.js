@@ -1,4 +1,4 @@
-import images from './images';
+import images from './images'
 
 const menu = [
   {
@@ -74,16 +74,16 @@ const menu = [
     img: `${images.p20}`,
     desc: `Image to text converter`,
   },
-  // {
-  //   id: 8,
-  //   title: 'Dev Portfolio',
-  //   category: 'react',
-  //   url: 'https://smato-clone.muhammedtijani.com/',
-  //   source: 'https://github.com/coolzyte/smato-clone-react',
-  //   tags: ['React', 'Styled-component', 'TailwindCSS'],
-  //   img: `${images.p13}`,
-  //   desc: `Browse Hotels Around the world `,
-  // },
+  {
+    id: 8,
+    title: 'Kalle Commerce',
+    category: 'react',
+    url: 'https://kalle-ten.vercel.app/',
+    source: 'https://github.com/muhammedrepo/kalle',
+    tags: ['Mern-stack', 'TailwindCSS'],
+    img: `${images.p13}`,
+    desc: `Kalle E-commerce app`,
+  },
 
   // {
   //   id: 9,
@@ -198,5 +198,5 @@ const menu = [
   //   img: `${images.p8}`,
   //   desc: 'Search App',
   // },
-];
-export default menu;
+]
+export default menu
