@@ -1,9 +1,9 @@
-import Project from '../components/Project';
-import { useState } from 'react';
-import { Link } from 'react-router-dom';
-import items from '../utils/data';
-import Button from './Button';
-import ContentPanel from './ContentPanel';
+import Project from '../components/Project'
+import { useState } from 'react'
+import { Link } from 'react-router-dom'
+import items from '../utils/data'
+import Button from './Button'
+import ContentPanel from './ContentPanel'
 
 /**
  * This code defines a React functional component called `Work` that displays a list of projects.
@@ -14,8 +14,9 @@ import ContentPanel from './ContentPanel';
  * @returns {JSX.Element} The rendered React component.
  */
 const Work = () => {
-  const [expanded, setExpanded] = useState(false);
-  const dataForDisplay = expanded ? items : items.slice(0, 3);
+  // eslint-disable-next-line no-unused-vars
+  const [expanded, setExpanded] = useState(false)
+  const dataForDisplay = expanded ? items : items.slice(0, 3)
 
   return (
     <div id="work" className="pt-20 pb-16 relative">
@@ -39,7 +40,7 @@ const Work = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Work;
+export default Work

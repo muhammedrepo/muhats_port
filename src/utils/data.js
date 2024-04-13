@@ -3,13 +3,13 @@ import images from './images'
 const menu = [
   {
     id: 1,
-    title: 'Kalle Commerce',
+    title: 'StyleSpark',
     category: 'react',
-    url: 'https://kalle-ten.vercel.app/',
+    url: 'https://style-spark.vercel.app/',
     source: 'https://github.com/muhammedrepo/kalle',
     tags: ['Mern-stack', 'Typescript', 'TailwindCSS'],
     img: `${images.p13}`,
-    desc: `Kalle E-commerce app`,
+    desc: `E-commerce app`,
   },
   {
     id: 2,
@@ -23,6 +23,16 @@ const menu = [
   },
   {
     id: 3,
+    title: 'Job Tracker',
+    category: 'react',
+    url: 'https://mern-job-app-v2.onrender.com',
+    source: 'https://github.com/muhammedrepo/mern-job-app-v2',
+    tags: ['Mern-stack', 'styled component'],
+    img: `${images.p11}`,
+    desc: 'Job tracker app',
+  },
+  {
+    id: 4,
     title: 'Monst Clone',
     category: 'Typescript',
     url: 'https://monst-clone.muhammedtijani.com/',
@@ -33,7 +43,7 @@ const menu = [
   },
 
   {
-    id: 4,
+    id: 5,
     title: 'Elyssi E-commerce',
     category: 'react',
     url: 'https://elyssi.vercel.app/',
@@ -44,7 +54,7 @@ const menu = [
   },
 
   {
-    id: 5,
+    id: 6,
     title: 'Crypto News',
     category: 'react',
     url: 'https://crypto-news.muhammedtijani.com/',
@@ -55,7 +65,7 @@ const menu = [
   },
 
   {
-    id: 6,
+    id: 7,
     title: 'Techx Website',
     category: 'Next',
     url: 'https://techx-website.vercel.app/',
@@ -66,7 +76,7 @@ const menu = [
   },
 
   {
-    id: 7,
+    id: 8,
     title: 'Startup',
     category: 'react',
     url: 'https://startup.muhammedtijani.com/',
@@ -76,7 +86,7 @@ const menu = [
     desc: `Startup focus template`,
   },
   {
-    id: 8,
+    id: 9,
     title: 'Manage Landing Page',
     category: 'react',
     url: 'https://manage-landing-page.muhammedtijani.com/',
@@ -86,7 +96,7 @@ const menu = [
     desc: `Manage landing page`,
   },
   {
-    id: 9,
+    id: 10,
     title: 'User Accounts Activity',
     category: 'react',
     url: 'https://frontend-interview-test.netlify.app/',
@@ -96,7 +106,7 @@ const menu = [
     desc: `User accounts analytics`,
   },
   {
-    id: 10,
+    id: 11,
     title: 'Hoobank website',
     category: 'react',
     url: 'https://hoobank.muhammedtijani.com/',
@@ -107,7 +117,7 @@ const menu = [
   },
 
   {
-    id: 11,
+    id: 12,
     title: 'Dice Game',
     category: 'javascript',
     url: 'https://roll-a-dice.muhammedtijani.com/',
@@ -118,7 +128,7 @@ const menu = [
   },
 
   {
-    id: 12,
+    id: 13,
     title: 'Image To Text',
     category: 'Typescript',
     url: 'https://image-text.muhammedtijani.com/',
@@ -128,7 +138,7 @@ const menu = [
     desc: `Image to text converter`,
   },
   {
-    id: 13,
+    id: 14,
     title: 'Job Board',
     category: 'react',
     url: 'https://job-board.muhammedtijani.com',
