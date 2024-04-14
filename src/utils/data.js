@@ -95,16 +95,18 @@ const menu = [
     img: `${images.p14}`,
     desc: `Manage landing page`,
   },
+
   {
     id: 10,
-    title: 'User Accounts Activity',
+    title: 'Pavo Website',
     category: 'react',
-    url: 'https://frontend-interview-test.netlify.app/',
-    source: 'https://github.com/coolzyte/interview-test',
-    tags: ['React', 'Tailwind', 'API'],
-    img: `${images.p15}`,
-    desc: `User accounts analytics`,
+    url: 'https://pavo.muhammedtijani.com/',
+    source: 'https://github.com/coolzyte/pavo',
+    tags: ['React', 'TailwindCSS'],
+    img: `${images.p17}`,
+    desc: `Pavo react website`,
   },
+
   {
     id: 11,
     title: 'Hoobank website',
@@ -170,26 +172,16 @@ const menu = [
   // },
 
   // {
-  //   id: 15,
-  //   title: 'Pavo Website',
+  //   id: 10,
+  //   title: 'User Accounts Activity',
   //   category: 'react',
-  //   url: 'https://pavo.muhammedtijani.com/',
-  //   source: 'https://github.com/coolzyte/pavo',
-  //   tags: ['React', 'Tailwind'],
-  //   img: `${images.p17}`,
-  //   desc: `Pavo react website`,
+  //   url: 'https://frontend-interview-test.netlify.app/',
+  //   source: 'https://github.com/coolzyte/interview-test',
+  //   tags: ['React', 'Tailwind', 'API'],
+  //   img: `${images.p15}`,
+  //   desc: `User accounts analytics`,
   // },
 
-  // {
-  //   id: 17,
-  //   title: 'Restaurant',
-  //   category: 'react',
-  //   url: 'https://restaurant-app.muhammedtijani.com/',
-  //   source: 'https://github.com/coolzyte/restaurant-app',
-  //   tags: ['React', 'CSS'],
-  //   img: `${images.p4}`,
-  //   desc: `Restaurant website template `,
-  // },
   // {
   //   id: 18,
   //   title: 'Portfolio',
